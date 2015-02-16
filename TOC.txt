@@ -1,0 +1,108 @@
+To mark an entry for a specific TOC, press ALT+SHIFT+O to open the Mark Table of Contents Entry dialog box and fill in the text boxes.
+
+To build two or more TOCs in your document, with each TOC showing a different type of entry, you can use table identifiers.
+
+First you'll need to determine a letter for each TOC, such as "A" for all the sauce recipes and "B" for all the breakfast recipes.
+
+Then mark the text you want in each TOC using a TC field, which you learned in the first lesson. The Table identifier text box in the Mark Table of Contents Entry dialog box is where you enter the TOC letter (in the example in the illustration, "A" is for the sauce recipes and "B" for breakfast recipes).
+
+When you create the TOC you'll use only the \f switch with the table identifier letter to build the TOC. For example:
+
+{TOC \f B}
+
+As you saw in the first practice session, the \f switch builds a TOC by collecting the TC fields. With the "B" table identifier used to build the TOC, it will include only the TC fields marked with that letter. If the "A" table identifier is used, then only the "A" text will be included in the TOC.
+
+In this way you can include text in several different TOCs by marking it with one or more TC field.
+
+
+
+
+
+
+f your document requires TOCs for sequential text or blocks of text and you've used Word's built-in heading styles or outline levels, then you can use bookmarks to create a TOC. A chapter in a book is a good example of sequential text and you won't need to mark each heading individually.
+
+Bookmarks in Word are not used just for TOCs; they identify a location or selection of text that you name for future reference.
+
+First you need to bookmark the text. To do that, select all the text for the entire area and then click the Insert tab and Bookmark in the Links group. Type a name for the bookmark (such as "Breakfast") and click Add.
+
+Now create a TOC and use the \b switch along with the bookmark name. For example, the TOC field for the breakfast recipes will be:
+
+{ TOC \b "Breakfast" }
+
+The TOC field then collects all the text marked with heading styles or outline levels from the entire bookmarked area named "Breakfast."
+
+
+
+
+
+TOC and TC fields in Microsoft® Word 2007
+
+Behind every automatic table of contents in Microsoft Word is a TOC field. All automatic tables of contents rely on TOC fields behind the scenes — they collect the entries for the table of contents. When the TOC field result is displayed, you see the table of contents.
+
+TC field codes can be used to mark the text that you want to be included in the table of contents.
+
+To set up a TC field:
+
+Select the text that you want to include in the TOC. This text should be in the body of the document not in a TOC.
+
+Press ALT+SHIFT+O to open the Mark Table of Contents Entry dialog box.
+
+In the dialog box, edit the text in the Entry text box if you need to.
+
+If there's more than one TOC in a document, each has a different letter to identify it; click the Table identifier text box arrow and then the letter of the table where you want this entry to be displayed. If there's only one TOC, leave this unchanged.
+
+Select the TOC level for this entry in the Level box.
+
+To add the TC field entries to your table of contents, first create the TOC, then press ALT+F9 to reveal the field code and type \f at the end of the field. The \f switch will tell the TOC to include the text marked with the TC field. For example:
+
+{ TOC \o "1-3" \h \f}
+
+If you use any letter besides "C" (the default) for the table identifier when you mark your text, you will need to type the letter after the \f switch.
+
+Keyboard shortcuts for working with fields
+
+Keyboard shortcut
+
+Action
+
+CTRL+F9
+
+Inserts a new blank field
+
+F9
+
+Updates a field (note that you first must have clicked in the field)
+
+CTRL+A, then F9
+/
+Updates all fields in a document (The Update Table of Contents dialog box may open for your TOC. Chose to update just page numbers or all entries.)
+
+SHIFT+F9
+
+Toggles between a field code and field result (you first must have selected the entire field including the curly brackets)
+
+ALT+F9
+
+Toggles between all field codes and field results in a document
+
+ALT+SHIFT+O
+
+Opens the Mark Table of Contents dialog box to insert a TC field
+
+Field switches
+
+Field switches are commands inside a field that determine what the code does. There are switches available for both TC and TOC fields. Some actions are possible only by using field switches — for example, adding TC entries to a TOC (\f switch), or omitting page numbers from some TOC entries (the \n switch).
+
+To add a switch you type the backslash and then the switch letter.
+
+For an explanation of all the switches for fields, click Quick Parts in the Text group on the Insert tab, and then Field. The TOC and TC fields are in the Index and Tables category. Click Field Codes and then Options to view the switches and an explanation of what each switch does.
+
+For more information about field switches, see Microsoft Word Help.
+
+Multiple TOCs in a document
+
+Basic multiple TOCs     Use when you want an abbreviated TOC that includes all the main headings, and then a full TOC that includes all the subheadings as well. You must use Word's built-in heading styles to mark your text. Create your TOCs, and then use the \o switch to define which heading styles you want included in each TOC.
+
+Table identifiers     Use when you want two (or more) TOCs for different types of entries and the marked text is not distinguished by a heading style or location. You identify each TOC with a letter value (table identifier), for example, A and B. Insert TC fields for each entry, choosing a table identifier for the entry. Use the \f switch and the letter identifier in each TOC.
+
+Bookmarks     Use when your document requires TOCs for chapters or blocks of continuous text. Bookmark the text of the chapter or block of text, and then create each TOC and use the \b switch and the bookmark name.
