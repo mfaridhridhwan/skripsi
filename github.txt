@@ -1,0 +1,32 @@
+melihat file yg sudah di catat dan yg belum
+$ git status
+
+inisiasi file git
+$ git init
+
+menambah semua file yg di-commit
+$ git add *.*
+
+mencatat
+$ git commit -m '20150216-11-48'
+
+daftar 'commit'
+$ git log
+
+mengakses github
+$ git remote add origin http://github.com/mfaridhridhwan/skripsi.git
+
+menyimpan file local ke github
+$ git push origin master
+
+melihat file yg sudah di catat dan yg belum
+$ git status
+
+menambah perubahan file yg di-commit
+$ git add .
+
+mencatat
+$ git commit -m '20150216-15-11'
+
+download file dari github
+$ git pull origin master
