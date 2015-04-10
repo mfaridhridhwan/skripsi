@@ -8,9 +8,16 @@ Sub PageNumberReset()
     Dim aRange As Range
 
     ' Specify the path to the document files
-    pathName = "\skrips muf 2015\"
+    pathName = "..\proposal"
     ' Create an array holding the document file names, in sequence
-    fileNames = Array("`h_ bab i pendahuluan.docx", "`i_ bab ii landasan teori.docx", "`j_ bab iii analisa sistem berjalan.docx", "`k_ bab iv program aplikasi usulan.docx", "`l_ bab v penutup.docx", "`m_ daftarpustaka.docx", "`n_lampiran.docx")
+    fileNames = Array(
+	"`g_ bab 1 pendahuluan.docx", 
+	"`h_ bab 2 tinjauan pustaka.docx", 
+	"`i_ bab 3 metode penelitian.docx", 
+	"`j_ jadwal pelaksanaan penelitian.docx", 
+	"`k_ daftar pustaka.docx", 
+	"`l_ lampiran.docx"
+	)
 
     pgNo = 0
     For n = 0 To UBound(fileNames)
